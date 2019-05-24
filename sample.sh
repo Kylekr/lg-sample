@@ -3,5 +3,5 @@
 date
 cat /root/1.txt |  while read output
 do
-    mtr -r -c 10 "$output" > /mnt/s3
+    mtr -r -c 10 "$output" --csv > /mnt/s3/result.csv
 done
